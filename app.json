@@ -1,0 +1,16 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ],
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "Reactify-Fast-Food-Fast",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

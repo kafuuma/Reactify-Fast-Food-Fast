@@ -14,7 +14,7 @@ cypress/fixtures/example.json
 
 # production
 /build
-
+/dict
 # misc
 .DS_Store
 .env.local

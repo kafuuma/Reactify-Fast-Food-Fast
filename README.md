@@ -1,7 +1,7 @@
 # Fast-Food-Fast-LMS 8.1
 
 [![Build Status](https://travis-ci.org/kafuuma/Reactify-Fast-Food-Fast.svg?branch=ch-code-climate-integration-163721387)](https://travis-ci.org/kafuuma/Reactify-Fast-Food-Fast)
-
+[![Test Coverage](https://api.codeclimate.com/v1/badges/f078d3b8b16ca068c140/test_coverage)](https://codeclimate.com/github/kafuuma/Reactify-Fast-Food-Fast/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f078d3b8b16ca068c140/maintainability)](https://codeclimate.com/github/kafuuma/Reactify-Fast-Food-Fast/maintainability)
 
 ## project overview
