@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "stable"
+  - 'stable'
 cache:
   directories:
     - node_modules
@@ -12,7 +12,8 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - npm install
-  - npm test
+  - npm run build
+  - npm run lint
+  - npm run test-cov
 after_script:
   - ./cc-test-reporter after-build --debug --exit-code $TRAVIS_TEST_RESULT
