@@ -79,7 +79,12 @@ module.exports = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['eslint-loader', 'babel-loader']
+      },
+      {
+        test: /\.(gif|png|jpe?g|svg|eot|woff|woff2|ttf)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -97,7 +102,9 @@ module.exports = {
   },
   devServer: {
     port: 3000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    hot: true,
+    contentBase: './dist'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -105,5 +112,8 @@ module.exports = {
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: './index.html'
     })
-  ]
+  ],
+  node: {
+    fs: 'empty'
+  }
 };
