@@ -7,9 +7,10 @@
 ## project overview
 
 This is a fast food delivery application for a fast food restaurent created\
-during Andela Bootcamp check, for UI [HERE]()
+during Andela Bootcamp
 
-The is App deployed on Heroku [HERE](https://fast-food-reactify.herokuapp.com/)
+The is App deployed on Heroku [HERE](https://fast-food-staging.herokuapp.com)
+
 
 ## project overview
 
@@ -24,6 +25,75 @@ The is App deployed on Heroku [HERE](https://fast-food-reactify.herokuapp.com/)
    - _Accept and decline orders_
    - _Mark orders as completed_
 6. A user should be able to see a history of ordered food
+
+## Folder Structure.
+
+```
+LMS 8.1
+│   README.md
+│   .gitignore
+│   package.json
+│   travis.yml
+|   server.js
+|   Procfile
+|   webpack.config.js
+|   .babelrc
+│   yarn.lock
+|   .eslintrc
+|   .travis.yml
+│
+|
+└───src
+│   │   index.js
+|   |   App.js
+|   |  store.js
+│   │
+|   |___assets
+|   |
+│   └───components
+│   |   │   components
+│   |   │   ...
+│   │
+│   └───containers
+│   |   │   components
+│   |   │   ...
+|   |   |
+│   └───actions
+│   |   │   action.js
+│   |   │   ...
+|   |____Router.js
+|   |
+|   |____setupTests.js
+|   |
+│   │
+│   └───reducers
+│       │   reducer1.js
+│       │   ...
+```
+
+### Try it out
+
+- Clone the repository locally
+
+  `git clone https://github.com/kafuuma/Reactify-Fast-Food-Fast.git`
+
+- Checkout to the repo directoey
+
+  `cd LMS 8.1`
+
+- Install the dependencies.
+
+  run `yarn`
+
+- start the application.
+
+  `yarn start`
+
+## Testing
+
+`yarn test`
+
+## Testing with coverage`
 
 ## Developer
 
