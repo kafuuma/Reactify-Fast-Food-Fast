@@ -8,7 +8,9 @@
 
 This is a fast food delivery application for a fast food restaurent created\
 during Andela Bootcamp
-The is app deployed on Heroku [HERE](https://fast-food-staging.herokuapp.com/)
+
+The is App is deployed on Heroku [HERE](https://fast-food-staging.herokuapp.com)
+
 
 ## project overview
 
