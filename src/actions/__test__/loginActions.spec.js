@@ -7,7 +7,7 @@ import { LoginSuccess, LoginUser, LoginFail } from '../authActions/loginAction';
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
 
-describe('signup actions', () => {
+describe('login actions', () => {
   afterEach(() => {
     fetchMock.restore();
   });
