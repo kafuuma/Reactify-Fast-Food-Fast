@@ -9,7 +9,7 @@
 This is a fast food delivery application for a fast food restaurent created\
 during Andela Bootcamp check, for UI [HERE]()
 
-The is App deployed on Heroku [HERE]()
+The is App deployed on Heroku [HERE](https://fast-food-reactify.herokuapp.com/)
 
 ## project overview
 
