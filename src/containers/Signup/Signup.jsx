@@ -58,7 +58,8 @@ Signup.defaultProps = {
 
 export const mapStateToProps = state => {
   return {
-    message: state.signup.user
+    message: state.signup.user,
+    time_flag: state.signup.time_flag
   };
 };
 
