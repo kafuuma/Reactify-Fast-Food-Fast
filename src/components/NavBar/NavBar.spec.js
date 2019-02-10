@@ -18,4 +18,39 @@ describe('<NaBbar />', () => {
     wrapper.find('#togler').simulate('click');
     expect(onClick()).toBeDefined;
   });
+  it('should call homeActive ', () => {
+    const instance = wrapper.instance();
+    expect(
+      instance.homeActive({
+        preventDefault: jest.fn,
+        homeActive: true,
+        signupActive: false,
+        loginActive: false
+      })
+    );
+  });
+
+  it('should call signupActive ', () => {
+    const instance = wrapper.instance();
+    expect(
+      instance.signupActive({
+        preventDefault: jest.fn,
+        homeActive: false,
+        signupActive: true,
+        loginActive: false
+      })
+    );
+  });
+
+  it('should call loginActive ', () => {
+    const instance = wrapper.instance();
+    expect(
+      instance.loginActive({
+        preventDefault: jest.fn,
+        homeActive: false,
+        signupActive: false,
+        loginActive: true
+      })
+    );
+  });
 });

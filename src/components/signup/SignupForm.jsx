@@ -9,7 +9,7 @@ import {
   MDBCardBody
 } from 'mdbreact';
 
-const SignupForm = ({ handleSubmit, handleChange, message }) => {
+const SignupForm = ({ handleSubmit, handleChange }) => {
   return (
     <MDBContainer>
       <MDBRow className="d-flex flex-center pt-5">
@@ -22,11 +22,12 @@ const SignupForm = ({ handleSubmit, handleChange, message }) => {
                   <MDBInput
                     name="full_name"
                     onChange={handleChange}
-                    label="Your name"
+                    label="Your username"
                     icon="user"
                     group
                     type="text"
                     validate
+                    required={true}
                     error="wrong"
                     success="right"
                   />
@@ -35,6 +36,7 @@ const SignupForm = ({ handleSubmit, handleChange, message }) => {
                     onChange={handleChange}
                     label="Your email"
                     icon="envelope"
+                    required={true}
                     group
                     type="email"
                     validate
@@ -44,11 +46,12 @@ const SignupForm = ({ handleSubmit, handleChange, message }) => {
                   <MDBInput
                     name="contact"
                     onChange={handleChange}
-                    label="contact"
+                    label="Your contact"
                     icon="envelope"
                     group
                     type="text"
                     validate
+                    required={true}
                     error="wrong"
                     success="right"
                   />
@@ -60,6 +63,7 @@ const SignupForm = ({ handleSubmit, handleChange, message }) => {
                     group
                     type="password"
                     validate
+                    required={true}
                   />
                   <MDBInput
                     name="confirm_password"
@@ -71,6 +75,7 @@ const SignupForm = ({ handleSubmit, handleChange, message }) => {
                     validate
                     error="wrong"
                     success="right"
+                    required={true}
                   />
                 </div>
                 <div className="text-center py-4 mt-3">

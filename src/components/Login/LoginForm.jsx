@@ -10,7 +10,6 @@ import {
 } from 'mdbreact';
 
 const Login = ({ handleChange, handleSubmit }) => {
-  const bgPink = { background: '#ff3300' };
   return (
     <MDBContainer>
       <MDBRow className="d-flex flex-center pt-5">
@@ -27,6 +26,7 @@ const Login = ({ handleChange, handleSubmit }) => {
                     group
                     type="email"
                     validate
+                    required={true}
                     error="wrong"
                     success="right"
                     onChange={handleChange}
@@ -38,6 +38,7 @@ const Login = ({ handleChange, handleSubmit }) => {
                     group
                     type="password"
                     validate
+                    required={true}
                     onChange={handleChange}
                   />
                 </div>
