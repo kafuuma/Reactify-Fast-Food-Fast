@@ -1,8 +1,8 @@
 import actionTypes from '../actionTypes';
 
-export const signupFail = message => ({
+export const signupFail = (message, ts) => ({
   type: actionTypes.SIGNUPFAIL,
-  payload: message
+  payload: { message, ts }
 });
 
 export const signupSuccess = message => ({
@@ -24,7 +24,7 @@ export const signupUser = userData => {
         if (response.message == 'signup successfull') {
           dispatch(signupSuccess(response.message));
         } else {
-          dispatch(signupFail(response.message));
+          dispatch(signupFail(response.message, new Date().getTime()));
         }
       });
   };

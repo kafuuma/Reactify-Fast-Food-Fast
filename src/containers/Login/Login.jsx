@@ -17,9 +17,10 @@ export class Login extends Component {
   componentWillReceiveProps(nextProps) {
     const { message } = nextProps;
     if (message.message == 'login successfull') {
-      toast.success(message);
+      toast.success(message.message);
       const { history } = this.props;
-      window.localStorage.setItem('token', message.Athentication);
+
+      window.localStorage.setItem('token', message.Authentication);
       history.push('/');
     } else {
       toast.error(message.message);

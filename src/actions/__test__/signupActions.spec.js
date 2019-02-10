@@ -16,7 +16,7 @@ describe('signup actions', () => {
     fetchMock.restore();
   });
   it('should mock fetch api', () => {
-    const store = mockStore({ user: {} });
+    const store = mockStore({ user: {}, time_flag: '' });
     fetchMock.postOnce(
       'https://fast-food-reactify.herokuapp.com/api/v1/auth/signup',
       {
@@ -47,12 +47,15 @@ describe('signup actions', () => {
     const failAction = [
       {
         type: actionTypes.SIGNUPFAIL,
-        payload: 'username must be between 3 to 10 characters'
+        payload: {
+          message: 'username must be between 3 to 10 characters',
+          ts: '123334444'
+        }
       }
     ];
     const usernameError = 'username must be between 3 to 10 characters';
-    const store = mockStore({ user: {} });
-    store.dispatch(signupFail(usernameError));
+    const store = mockStore({ user: {}, time_flag: '' });
+    store.dispatch(signupFail(usernameError, '123334444'));
     expect(store.getActions()).toEqual(failAction);
   });
 });

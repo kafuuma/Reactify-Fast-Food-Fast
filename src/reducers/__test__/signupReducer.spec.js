@@ -2,7 +2,8 @@ import actionTypes from '../../actions/actionTypes';
 import signupReducer from '../signupReducer';
 
 const initialStore = {
-  user: {}
+  user: {},
+  time_flag: ''
 };
 
 describe('signup reducer', () => {
@@ -14,9 +15,9 @@ describe('signup reducer', () => {
     expect(
       signupReducer(undefined, {
         type: type,
-        payload: { username: '', email: '', password: '' }
+        payload: {}
       })
-    ).toEqual({ user: { username: '', email: '', password: '' } });
+    ).toEqual({});
   });
   it('should return new state on SIGNUPSUCCESS type', () => {
     const newUser = {
