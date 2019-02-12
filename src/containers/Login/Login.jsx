@@ -19,7 +19,8 @@ export class Login extends Component {
     if (message.message == 'login successfull') {
       toast.success(message.message);
       const { history } = this.props;
-      window.localStorage.setItem('token', message.Athentication);
+
+      window.localStorage.setItem('token', message.Authentication);
       history.push('/');
     } else {
       toast.error(message.message);
